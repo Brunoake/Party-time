@@ -7,5 +7,7 @@ app.use(cors())
 app.use(express.json())
 
 app.listen(3000, function() {
-    console.log("SERVIDOR ONLINE!!")
-})
+    console.log("SERVIDOR ONLINE!!");
+});
+
+// 7g*Aw_-6TpwaYxD
