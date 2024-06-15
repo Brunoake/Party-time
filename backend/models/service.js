@@ -1,9 +1,9 @@
 const mongoose = require("mongoose")
 
 
-const {schema} = mongoose;
+const {Schema} = mongoose;
 
-const serviceSchema = new schema({
+const serviceSchema = new Schema({
     name: {
         type: String,
         required: true
@@ -23,7 +23,7 @@ const serviceSchema = new schema({
 }, {timestamps: true}
 );
 
-const Service = mongoose.model("service", serviceSchema)
+const Service = mongoose.model("Service", serviceSchema)
 
 module.exports = {
     Service,

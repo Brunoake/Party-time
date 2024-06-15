@@ -1,0 +1,9 @@
+POST http://localhost:3000/api/services
+content-type: application/json
+
+{
+    "name": "Algum serviço",
+    "description": "Alguma descrção",
+    "price": 1400,
+    "image": "https://images.pexels.com/photos/15350765/pexels-photo-15350765/free-photo-of-monaco-palacio-castelo-automobilismo.jpeg?auto=compress&cs=tinysrgb&w=600"
+}
