@@ -1,7 +1,7 @@
 const router = require("express").Router()
 
 // Services router
-const serviceRouter = require("./service")
+const serviceRouter = require("./services")
 
 router.use("/", serviceRouter)
 

@@ -10,3 +10,7 @@ content-type: application/json
 
 ###
 GET http://localhost:3000/api/services
+
+
+###
+GET http://localhost:3000/api/services/666ddf6b6e9167c6ac960bad
