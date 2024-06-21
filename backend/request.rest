@@ -18,3 +18,15 @@ GET http://localhost:3000/api/services/666ddf6b6e9167c6ac960ba8
 
 ###
 DELETE http://localhost:3000/api/services/666df91df19ce7b791f27b28
+
+###
+
+PUT http://localhost:3000/api/services/66758b04764665d5eb342cb3
+content-type: application/json
+
+{
+    "name": "TESTE ATUALIZAÇÂO",
+    "description": "Alguma descrção",
+    "price": 400,
+    "image": "https://images.pexels.com/photos/15350765/pexels-photo-15350765/free-photo-of-monaco-palacio-castelo-automobilismo.jpeg?auto=compress&cs=tinysrgb&w=600"
+}
