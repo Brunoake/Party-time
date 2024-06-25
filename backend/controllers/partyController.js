@@ -4,8 +4,7 @@ const checkPartyBudget = (budget, services) => {
 
     const priceSum = services.reduce((sum, service) => sum + service.price, 0)
 
-    console.log(priceSum, budget)
-
+    
     if(priceSum > budget) {
         return false;
     }
@@ -32,7 +31,7 @@ const partyController = {
                 return
             }
 
-            const responce = await partyModel.create(party)
+            const response = await partyModel.create(party)
 
             res.status(201).json({response, msg:"festa criada com sucesso"})
         } catch (error) {

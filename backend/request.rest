@@ -38,9 +38,23 @@ Content-Type: application/json
 
 {
 
-    "title": "Meu eventi", 
+    "title": "Meu evento 2", 
     "author": "Bruno",
     "description": "Carnaval",
-    "budget": 9000,
-    "image": "https://images.pexels.com/photos/15350765/pexels-photo-15350765/free-photo-of-monaco-palacio-castelo-automobilismo.jpeg?auto=compress&cs=tinysrgb&w=600"
+    "budget": 1000,
+    "image": "https://images.pexels.com/photos/15350765/pexels-photo-15350765/free-photo-of-monaco-palacio-castelo-automobilismo.jpeg?auto=compress&cs=tinysrgb&w=600",
+  "services": [
+    {
+      "name": "Algum serviço 1",
+      "description": "Alguma descrição",
+      "price": 400,
+      "image": "https://images.pexels.com/photos/15350765/pexels-photo-15350765/free-photo-of-monaco-palacio-castelo-automobilismo.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "name": "Algum serviço 2", 
+      "description": "Carnaval",
+      "price": 1000,
+      "image": "https://images.pexels.com/photos/15350765/pexels-photo-15350765/free-photo-of-monaco-palacio-castelo-automobilismo.jpeg?auto=compress&cs=tinysrgb&w=600"
+    }
+  ]
 }

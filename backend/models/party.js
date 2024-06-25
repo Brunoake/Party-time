@@ -2,7 +2,7 @@
 
  const {Schema} = mongoose
 
- const {serviceSchema} = require ("./services")
+ const {serviceSchema} = require ("./service")
 
  const partySchema = new Schema({
     title:{
@@ -26,7 +26,7 @@
         required: true,
     },
     services:{
-        type: [serviceSchema],
+        type: [serviceSchema], 
     },
  }, {timestamps: true}
 );
