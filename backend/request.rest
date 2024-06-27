@@ -41,7 +41,7 @@ Content-Type: application/json
     "title": "Meu evento 2", 
     "author": "Bruno",
     "description": "Carnaval",
-    "budget": 1000,
+    "budget": 12000,
     "image": "https://images.pexels.com/photos/15350765/pexels-photo-15350765/free-photo-of-monaco-palacio-castelo-automobilismo.jpeg?auto=compress&cs=tinysrgb&w=600",
   "services": [
     {
@@ -70,6 +70,18 @@ DELETE http://localhost:3000/api/parties/667ad86883b6b9dabb402f2f
 
 ###
 PUT http://localhost:3000/api/parties/66758b04764665d5eb342cb
+content-type: application/json
+
+{
+    "name": "TESTE ATUALIZAÇÂO",
+    "description": "Alguma descrção",
+    "price": 400,
+    "image": "https://images.pexels.com/photos/15350765/pexels-photo-15350765/free-photo-of-monaco-palacio-castelo-automobilismo.jpeg?auto=compress&cs=tinysrgb&w=600"
+}
+
+###
+
+POST http://localhost:3000/api/parties
 Content-Type: application/json
 
 {
@@ -77,7 +89,7 @@ Content-Type: application/json
     "title": "Meu evento 2", 
     "author": "Bruno",
     "description": "Carnaval",
-    "budget": 10000,
+    "budget": 12000,
     "image": "https://images.pexels.com/photos/15350765/pexels-photo-15350765/free-photo-of-monaco-palacio-castelo-automobilismo.jpeg?auto=compress&cs=tinysrgb&w=600",
   "services": [
     {
