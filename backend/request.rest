@@ -61,3 +61,36 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/667d7f712f92fcbb6875c57d
+
+###
+DELETE http://localhost:3000/api/parties/667ad86883b6b9dabb402f2f
+
+###
+PUT http://localhost:3000/api/parties/66758b04764665d5eb342cb
+Content-Type: application/json
+
+{
+
+    "title": "Meu evento 2", 
+    "author": "Bruno",
+    "description": "Carnaval",
+    "budget": 10000,
+    "image": "https://images.pexels.com/photos/15350765/pexels-photo-15350765/free-photo-of-monaco-palacio-castelo-automobilismo.jpeg?auto=compress&cs=tinysrgb&w=600",
+  "services": [
+    {
+      "name": "Algum serviço 1",
+      "description": "Alguma descrição",
+      "price": 400,
+      "image": "https://images.pexels.com/photos/15350765/pexels-photo-15350765/free-photo-of-monaco-palacio-castelo-automobilismo.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "name": "Algum serviço 2", 
+      "description": "Carnaval",
+      "price": 1000,
+      "image": "https://images.pexels.com/photos/15350765/pexels-photo-15350765/free-photo-of-monaco-palacio-castelo-automobilismo.jpeg?auto=compress&cs=tinysrgb&w=600"
+    }
+  ]
+}
