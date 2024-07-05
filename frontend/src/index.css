@@ -24,3 +24,23 @@ a{
 p{
   color: #757990;
 }
+
+.btn, .btn-seconder{
+  background-color: #7704fc;
+  color: #fff;
+  padding: .5rem 1rem;
+  border-radius: 8px;
+  transition: .4s;
+  cursor: pointer;
+  display: block;
+}
+
+.btn, .btn-seconder:hover{
+  opacity: o.8;
+}
+
+.btn-seconder{
+  background-color: #fff;
+  color: #283252;
+  border: 1px solid #cfcfcf;
+}
