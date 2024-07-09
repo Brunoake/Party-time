@@ -15,6 +15,8 @@ const CreateParty = () => {
   const [image, setImage] = useState("")
   const [partyService, setPartyService] = useState([])
 
+  const navigate = useNavigate()
+
   // Load services
   useEffect(() => {
 
@@ -50,7 +52,7 @@ const CreateParty = () => {
   }
 
   // Criando nova party
-  const createParty = (e) => {
+  const createParty = async (e) => {
     e.preventDefault();
     
     const party = {
@@ -62,6 +64,11 @@ const CreateParty = () => {
       services: partyService,
     }
 
+    const res = await partyFetch.post("/parties", party);
+
+    if(res.status === 201){
+    navigate ('/')
+    }
    
   }
 
