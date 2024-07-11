@@ -4,13 +4,15 @@ import { useState, useEffect } from 'react'
 
 import {useNavigate} from "react-router-dom"
 
+import useToast from '../Hook/useToast'
+
 import "./Form.css"
 
 const CreateParty = () => {
   const [services, setServices] = useState([])
   const [title, setTitle] = useState("")
   const [author, setAuthor] = useState("")
-  const [descprition, setDescription] = useState("")
+  const [description, setDescription] = useState("")
   const [budget, setBudget] = useState(0)
   const [image, setImage] = useState("")
   const [partyService, setPartyService] = useState([])
@@ -55,10 +57,12 @@ const CreateParty = () => {
   const createParty = async (e) => {
     e.preventDefault();
     
+   
+   try {
     const party = {
       title,
       author,
-      descprition,
+      description,
       budget,
       image,
       services: partyService,
@@ -67,9 +71,13 @@ const CreateParty = () => {
     const res = await partyFetch.post("/parties", party);
 
     if(res.status === 201){
-    navigate ('/')
+    navigate ('/');
+
+    useToast(res.data.msg);
     }
-   
+   } catch (error) {
+    useToast(error.response.data.msg, "error")
+   }
   }
 
 
@@ -102,7 +110,7 @@ const CreateParty = () => {
           placeholder='Conte mais sobre a festa...'
           required
           onChange={(e) => setDescription(e.target.value)}
-          value={descprition}
+          value={description}
           >
            </textarea>
         </label>
